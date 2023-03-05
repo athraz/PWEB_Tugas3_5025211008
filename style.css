@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid #232467;
+    padding: 20px 90px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    color: black;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.navbar .logo span{
+    color: #feba3b;
+}
+
+.navbar .nav a {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.navbar .nav a:hover {
+    color: #feba3b;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    height: 110vh;
+    background-color: #2d3e67;
+    align-items: center;
+    padding: 0px 30px 0 100px;
+}
+
+.home .content {
+    position: relative;
+}
+
+.home .content h2 {
+    max-width: 500px;
+    color: white;
+    font-size: 64px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    line-height: 1.1;
+}
+
+.home .content span {
+    font-size: 84px;
+    font-weight: 700;
+}
+
+.home .content span span {
+    color: #feba3b;
+}
+
+.home .content .button {
+    display: flex;
+    max-width: 350px;
+    justify-content: space-between;
+}
+
+.register-button,
+.testi-button {
+    background-color: #5a46dc;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.home .content .button .register-button:hover,
+.testi-button:hover {
+    background-color: #c3c3e5;
+}
+
+.home .content .button .register-button h4,
+.testi-button h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.home img {
+    margin-top: 30px;
+    margin-right: 120px;
+    width: 500px;
+    height: 500px;
+}
+
+.about {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: white;
+    padding: 20px;
+}
+
+.about .judul {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.about .judul h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.about .box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.about .box1 img {
+    height: 400px;
+    width: 400px;
+    margin-right: 60px;
+}
+
+.about .box1 .text {
+    text-align: left;
+    padding: 30px 150px 30px 60px;
+}
+
+.about .box1 h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.about .box1 h4 {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.about .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+    margin-bottom: 100px;
+}
+
+.about .box2 img {
+    height: 400px;
+    width: 400px;
+    margin-left: 60px;
+}
+
+.about .box2 .text {
+    text-align: left;
+    padding: 30px 60px 30px 150px;
+}
+
+
+.about .box2 h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.about .box2 h4 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.about .box2 h5 {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.about .box3 {
+    padding: 0 60px;
+}
+
+.about .box3 .subjudul h3 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about .box3 .subcontent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about .box3 .subcontent .subbox {
+    text-align: center;
+    padding: 30px;
+}
+
+.about .box3 .subcontent .subbox img {
+    width: 150px;
+    height: 150px;
+}
+
+.about .box3 .subcontent .subbox h3 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about .box3 .subcontent .subbox h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.break {
+    height: 40px;
+    background-color: #222f4f;
+
+}
+
+.break .content {
+    height: 40px;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.program {
+    background-color: #222f4f;
+    padding-bottom: 80px;
+}
+
+.program .judul {
+    padding: 90px 0 50px;
+    text-align: center;
+}
+
+.program .judul h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.program .content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.program .content .box {
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 40px;
+    background-size: 175px 175px;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 60px 120px 25px 25px;
+    cursor: pointer;
+}
+
+.program .content .box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+}
+
+.program .content .box:hover {
+    background-color: #c3c3e5;
+    transform: scale(1.1);
+}
+
+.program .seemore a {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 82%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.program .seemore h5 {
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 3px;
+}
+
+.program .seemore img {
+    width: 15px;
+    height: 10px;
+}
+
+.program .seemore a:hover {
+    background-color: #c3c3e5;
+}
+
+.testi {
+    padding: 0 60px 80px;
+    background-color: white;
+}
+
+.testi .judul {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.testi .judul h2 {
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.testi .slide {
+    width: 1350px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.testi .slide .slidebox {
+    display: flex;
+    width: 2250px;
+    animation: slide 20s ease infinite;
+}
+
+.testi .slide .slidebox .group {
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    background-color: #ffe7ba;
+    border-radius: 30px;
+    margin: 0 50px;
+}
+
+
+.testi .slide .slidebox .group .image {
+    height: 140px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #feba3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testi .slide .slidebox .group .image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.testi .slide .slidebox .group .text {
+    padding: 20px;
+}
+
+.testi .slide .slidebox .group .text .nama {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.testi .slide .slidebox .group .text h5 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.testi .slide .slidebox .group .text .comment {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact {
+    height: 300px;
+    background-color: #151d31;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.contact .col1 a{
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.contact .col1  span{
+    color: #feba3b;
+}
+
+.contact .col1 h4{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.contact .col1 .imgs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .col1 .imgs img{
+    width: 140px;
+    height: 42px;
+    margin-right: 20px;
+}
+
+.contact .col2 h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contact .col2 a{
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact .col2 a:hover{
+    padding-left: 10px;
+}
+
+.footer{
+    background-color: #0d111d;
+    padding: 10px;
+}
+
+.footer h3{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@keyframes slide {
+    30%{
+        margin-left: 0px;
+    }
+    60%{
+        margin-left: -450px;
+    }
+    90%{
+        margin-left: -900px;
+    }
+}
+
+.slide-top {
+    opacity: 0;
+    transform: translateY(120px);
+    transition: all 1s;
+}
+
+.slide-top-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-right {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.slide-right-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.program .content:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.program .content:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.program .content:nth-child(4) {
+    transition-delay: 600ms;
+}
